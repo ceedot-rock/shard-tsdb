@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>shard-tsdb browser example</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 36rem; margin: 2rem auto; padding: 0 1rem; }
+    pre { background: #111; color: #eee; padding: 1rem; border-radius: 8px; overflow: auto; }
+    button { padding: 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+  <h1>shard-tsdb (IndexedDB)</h1>
+  <p>Loads <code>shard-tsdb</code> from jsDelivr. Writes a few points, reads stats.</p>
+  <button id="go">Run demo</button>
+  <pre id="out">Ready.</pre>
+  <script type="module">
+    const out = document.getElementById("out");
+    document.getElementById("go").onclick = async () => {
+      try {
+        const { ShardTSDB } = await import(
+          "https://cdn.jsdelivr.net/npm/shard-tsdb@0.2.2/+esm"
+        );
+        // Note: package is CJS-built; if ESM import fails, use a bundler.
+        const db = new ShardTSDB({ backend: "indexeddb", blockSize: 16 });
+        const tags = { sensor: "browser" };
+        const t0 = Date.now();
+        for (let i = 0; i < 20; i++) {
+          await db.put("demo", tags, t0 + i * 1000, 20 + (i % 3));
+        }
+        await db.flushAll();
+        const st = await db.stats("demo", tags);
+        const last = await db.last("demo", tags, 5);
+        out.textContent = JSON.stringify({ st, last }, null, 2);
+      } catch (e) {
+        out.textContent =
+          "Import failed (package may be CJS-only on CDN): " + e +
+          "\nUse a bundler or the Node example: node examples/basic.mjs";
+      }
+    };
+  </script>
+</body>
+</html>

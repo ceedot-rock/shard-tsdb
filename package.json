@@ -1,0 +1,49 @@
+{
+  "name": "shard-tsdb",
+  "version": "0.2.3",
+  "description": "Pure-JS time-series database with Blackjack V2 compressed blocks (memory + IndexedDB backends)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "timeseries",
+    "tsdb",
+    "blackjack",
+    "compression",
+    "indexeddb",
+    "pure-js",
+    "slidphilabs",
+    "sensor"
+  ],
+  "author": "Corey Tasz + Meta AI",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://buy.stripe.com/eVq9AUd7D0OY0CVdAQ6wE0a"
+  },
+  "homepage": "https://github.com/ceedot-rock/shard-tsdb#readme",
+  "bugs": {
+    "url": "https://github.com/ceedot-rock/shard-tsdb/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceedot-rock/shard-tsdb.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE",
+    "examples",
+    "package.json"
+  ]
+}
