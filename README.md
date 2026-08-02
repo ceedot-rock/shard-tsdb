@@ -1,11 +1,26 @@
 # shard-tsdb
 
 [![npm](https://img.shields.io/npm/v/shard-tsdb)](https://www.npmjs.com/package/shard-tsdb)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![site](https://img.shields.io/badge/site-slidphilabs.vercel.app-blue)](https://slidphilabs.vercel.app)
 
-Pure JS **time-series database** with **Blackjack V2** compressed blocks.  
-Backends: **in-memory** (default) or **IndexedDB** (browser).
+**Pure-JS time-series database** with **Blackjack V2 compressed blocks** — built for sensors, walks, and smooth deltas where generic stores waste space. Backends: **in-memory** (default) or **IndexedDB** (browser).
+
+| | |
+|--|--|
+| **npm** | [`shard-tsdb@0.2.4`](https://www.npmjs.com/package/shard-tsdb) |
+| **site** | [slidphilabs.vercel.app](https://slidphilabs.vercel.app) |
+| **license** | [MIT](./LICENSE) |
+
+---
+
+## Why this exists
+
+Time-series from sensors and game/telemetry counters often look like **runs, ±1 walks, and smooth deltas**. Storing them as raw floats or gzipped JSON is easy — and bulky. shard-tsdb packs points into **Blackjack V2** blocks so you get a small pure-JS TSDB without native codecs or a server.
+
+For record-class **integer sequence** ratios (zeros / ramps / walks), see sibling **[Zero Range Wave](https://www.npmjs.com/package/zero-range-wave-compression)**.
+
+---
 
 ## Install
 
@@ -13,9 +28,9 @@ Backends: **in-memory** (default) or **IndexedDB** (browser).
 npm i shard-tsdb
 ```
 
-## Donate to SlidPhiLabs
+Node **≥ 18**. Works in the browser with the IndexedDB backend.
 
-**→ [Donate $29.99](https://buy.stripe.com/eVq9AUd7D0OY0CVdAQ6wE0a)** · [Support $199](https://buy.stripe.com/7sYbJ27NjfJSbhz8gw6wE09)
+---
 
 ## Quick start
 
@@ -37,7 +52,7 @@ await db.flushAll();
 const { tss, vals } = await db.range("room", tags, 0, Date.now() + 1e12);
 const last = await db.last("room", tags, 10);
 const st = await db.stats("room", tags);
-console.log(st); // { blocks, points, bytes, avgBitsPerPoint }
+// { blocks, points, bytes, avgBitsPerPoint }
 ```
 
 Browser:
@@ -45,6 +60,8 @@ Browser:
 ```js
 const db = new ShardTSDB({ backend: "indexeddb" });
 ```
+
+---
 
 ## API (`ShardTSDB`)
 
@@ -60,13 +77,27 @@ const db = new ShardTSDB({ backend: "indexeddb" });
 
 Also exports `BlackjackV2` / `BlackjackCodec` for direct series coding.
 
-## Related
+---
 
-- [shard-zip](https://www.npmjs.com/package/shard-zip) — standalone compressor
-- [blackjack-compression](https://www.npmjs.com/package/blackjack-compression) — Blackjack v4 + file LZ77
-- [slid-phi](https://www.npmjs.com/package/slid-phi) — Omni-Dormant integer pathways
+## Donate to SlidPhiLabs
 
-Site: [slidphilabs.vercel.app](https://slidphilabs.vercel.app)
+**→ [Donate $29.99](https://buy.stripe.com/eVq9AUd7D0OY0CVdAQ6wE0a)** · [Support $199](https://buy.stripe.com/7sYbJ27NjfJSbhz8gw6wE09)
+
+---
+
+## Related packages
+
+| Package | Role |
+|---------|------|
+| [zero-range-wave-compression](https://www.npmjs.com/package/zero-range-wave-compression) | ZRW v5 — beats gzip/brotli on zeros/ramps/walks |
+| [blackjack-compression](https://www.npmjs.com/package/blackjack-compression) | Blackjack v4 general int/byte/file compressor |
+| [shard-zip](https://www.npmjs.com/package/shard-zip) | Adaptive Fib + Blackjack V2 + CLI |
+| [slid-phi](https://www.npmjs.com/package/slid-phi) | Omni-Dormant integer pathways |
+| [CuNi Studio](https://cuni-studio.fly.dev/) | Exact multi-target code playground |
+
+Brand home: **[slidphilabs.vercel.app](https://slidphilabs.vercel.app)**
+
+---
 
 ## License
 
