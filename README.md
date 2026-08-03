@@ -79,7 +79,7 @@ Also exports `BlackjackV2` / `BlackjackCodec` for direct series coding.
 
 ---
 
-## Donate to SlidPhiLabs
+## Donate to Slid Phi Labs
 
 **→ [Donate $29.99](https://buy.stripe.com/eVq9AUd7D0OY0CVdAQ6wE0a)** · [Support $199](https://buy.stripe.com/7sYbJ27NjfJSbhz8gw6wE09)
 

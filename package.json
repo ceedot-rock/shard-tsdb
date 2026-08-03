@@ -1,7 +1,7 @@
 {
   "name": "shard-tsdb",
-  "version": "0.2.4",
-  "description": "Pure-JS time-series database with Blackjack V2 compressed blocks. Memory + IndexedDB backends. Sensor / walk / delta-friendly storage from the SlidPhiLabs compression family.",
+  "version": "0.2.5",
+  "description": "Slid Phi Labs \u2014 pure-JS time-series database with Blackjack V2 compressed blocks. Memory + IndexedDB backends.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -20,11 +20,11 @@
     "sensor-data",
     "lossless",
     "shard-tsdb",
-    "slidphilabs",
+    "slid phi labs",
     "nodejs",
     "browser"
   ],
-  "author": "Corey Tasz + Meta AI",
+  "author": "Slid Phi Labs",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.0.0",
