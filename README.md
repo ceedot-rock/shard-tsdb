@@ -1,5 +1,13 @@
 # shard-tsdb
 
+
+<p align="center">
+  <img src="./brand/slid-phi-labs-master.jpg" alt="Zero Range Wave · Slid Phi Labs" width="720"/>
+</p>
+
+<p align="center"><strong>Slid Phi Labs</strong> — official product branding</p>
+
+
 [![npm](https://img.shields.io/npm/v/shard-tsdb)](https://www.npmjs.com/package/shard-tsdb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![site](https://img.shields.io/badge/site-slidphilabs.vercel.app-blue)](https://slidphilabs.vercel.app)
