@@ -7,6 +7,8 @@
 
 <p align="center"><strong>Slid Phi Labs</strong> — official product branding</p>
 
+<p align="center"><img src="https://raw.githubusercontent.com/ceedot-rock/splabs-brand/main/assets/brand/logos/logo-shard-tsdb.jpg" alt="product logo" width="280"/></p>
+
 
 [![npm](https://img.shields.io/npm/v/shard-tsdb)](https://www.npmjs.com/package/shard-tsdb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
