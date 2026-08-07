@@ -1,7 +1,7 @@
 {
   "name": "shard-tsdb",
-  "version": "0.2.5",
-  "description": "Slid Phi Labs \u2014 pure-JS time-series database with Blackjack V2 compressed blocks. Memory + IndexedDB backends.",
+  "version": "0.2.8",
+  "description": "Slid Phi Labs — pure-JS time-series database with Blackjack V2 compressed blocks. Memory + IndexedDB backends.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -22,7 +22,22 @@
     "shard-tsdb",
     "slid phi labs",
     "nodejs",
-    "browser"
+    "browser",
+    "x402",
+    "agentic-commerce",
+    "agent-commerce",
+    "agents.txt",
+    "llms.txt",
+    "solana",
+    "base",
+    "usdc",
+    "slid-phi-labs",
+    "spl-codec",
+    "cddg",
+    "agent-platform",
+    "cuni",
+    "agent-rider",
+    "quikgater"
   ],
   "author": "Slid Phi Labs",
   "license": "MIT",
@@ -32,9 +47,9 @@
   },
   "funding": {
     "type": "individual",
-    "url": "https://buy.stripe.com/eVq9AUd7D0OY0CVdAQ6wE0a"
+    "url": "https://www.slidphilabs.com/api/agent"
   },
-  "homepage": "https://slidphilabs.vercel.app",
+  "homepage": "https://www.slidphilabs.com",
   "bugs": {
     "url": "https://github.com/ceedot-rock/shard-tsdb/issues"
   },
@@ -52,5 +67,40 @@
     "LICENSE",
     "examples",
     "package.json"
-  ]
+  ],
+  "agentic": {
+    "modules": {
+      "compression": [
+        "SPL Codec",
+        "CDDG:Split"
+      ],
+      "agent_platform": [
+        "CuNi",
+        "Agent^Rider",
+        "Quikgater"
+      ]
+    },
+    "commerce": "x402",
+    "discovery": "https://www.slidphilabs.com/api/agent",
+    "catalog": "https://www.slidphilabs.com/api/x402-products",
+    "web_codec": "https://www.slidphilabs.com/api/web-codec",
+    "site": "https://www.slidphilabs.com",
+    "llms_txt": "https://www.slidphilabs.com/llms.txt",
+    "agents_json": "https://www.slidphilabs.com/agents.json",
+    "one_liner": "Modules: Compression (SPL Codec+CDDG) · Agent platform (CuNi+Rider+Quikgater). Commerce: GET https://www.slidphilabs.com/api/agent then x402 X-PAYMENT.",
+    "agent_platform": {
+      "cuni": "https://cuni-studio.fly.dev/",
+      "agent_rider": "https://agentrider.vercel.app/",
+      "quikgater": "https://github.com/ceedot-rock/quikgater"
+    }
+  },
+  "x402": {
+    "discovery": "https://www.slidphilabs.com/api/agent",
+    "catalog": "https://www.slidphilabs.com/api/x402-products",
+    "networks": [
+      "solana-mainnet-beta",
+      "eip155:8453"
+    ],
+    "payment_header": "X-PAYMENT"
+  }
 }

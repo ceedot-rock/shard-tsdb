@@ -12,14 +12,14 @@
 
 [![npm](https://img.shields.io/npm/v/shard-tsdb)](https://www.npmjs.com/package/shard-tsdb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![site](https://img.shields.io/badge/site-slidphilabs.vercel.app-blue)](https://slidphilabs.vercel.app)
+[![site](https://img.shields.io/badge/site-www.slidphilabs.com-blue)](https://www.slidphilabs.com)
 
 **Pure-JS time-series database** with **Blackjack V2 compressed blocks** — built for sensors, walks, and smooth deltas where generic stores waste space. Backends: **in-memory** (default) or **IndexedDB** (browser).
 
 | | |
 |--|--|
 | **npm** | [`shard-tsdb@0.2.4`](https://www.npmjs.com/package/shard-tsdb) |
-| **site** | [slidphilabs.vercel.app](https://slidphilabs.vercel.app) |
+| **site** | [www.slidphilabs.com](https://www.slidphilabs.com) |
 | **license** | [MIT](./LICENSE) |
 
 ---
@@ -105,10 +105,28 @@ Also exports `BlackjackV2` / `BlackjackCodec` for direct series coding.
 | [slid-phi](https://www.npmjs.com/package/slid-phi) | Omni-Dormant integer pathways |
 | [CuNi Studio](https://cuni-studio.fly.dev/) | Exact multi-target code playground |
 
-Brand home: **[slidphilabs.vercel.app](https://slidphilabs.vercel.app)**
+Brand home: **[www.slidphilabs.com](https://www.slidphilabs.com)**
 
 ---
 
 ## License
 
 MIT
+
+## Agentic commerce
+
+Agents can buy / quote lab products via **x402** (USDC on Solana mainnet or Base mainnet).
+
+```
+Agent commerce: GET https://www.slidphilabs.com/api/agent then pay via x402 on Solana or Base mainnet (X-PAYMENT) on catalog POST.
+```
+
+| Surface | URL |
+|---------|-----|
+| Discovery | https://www.slidphilabs.com/api/agent |
+| Catalog | https://www.slidphilabs.com/api/x402-products |
+| agents.txt | https://www.slidphilabs.com/agents.txt |
+| agents.json | https://www.slidphilabs.com/agents.json |
+| llms.txt | https://www.slidphilabs.com/llms.txt |
+
+Humans: [www.slidphilabs.com](https://www.slidphilabs.com) (Stripe).
