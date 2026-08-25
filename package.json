@@ -33,9 +33,17 @@
     {
       "type": "individual",
       "url": "https://www.slidphilabs.com"
+    },
+    {
+      "type": "individual",
+      "url": "https://buy.stripe.com/9B628sd7DeFO99r9kA6wE0j"
+    },
+    {
+      "type": "individual",
+      "url": "https://www.slidphilabs.com/pay?sku=shard-tsdb"
     }
   ],
-  "homepage": "https://github.com/ceedot-rock/shard-tsdb",
+  "homepage": "https://www.slidphilabs.com/npm#shard-tsdb",
   "bugs": {
     "url": "https://github.com/ceedot-rock/shard-tsdb/issues"
   },
@@ -54,5 +62,15 @@
     "examples",
     "package.json",
     "NOTICE"
-  ]
+  ],
+  "agentic": {
+    "name": "Slid Phi Labs",
+    "sku": "shard-tsdb",
+    "human": "https://buy.stripe.com/9B628sd7DeFO99r9kA6wE0j",
+    "pay": "https://www.slidphilabs.com/pay?sku=shard-tsdb",
+    "x402": "https://www.slidphilabs.com/api/x402-products?sku=shard-tsdb",
+    "pricing": "https://www.slidphilabs.com/pricing.json",
+    "usd": 199,
+    "note": "Support for the public OSS library. Not a secret engine. Not Chamber Year."
+  }
 }
