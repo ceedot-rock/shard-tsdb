@@ -1,6 +1,6 @@
 {
   "name": "shard-tsdb",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Pure-JS time-series DB with Blackjack-compressed blocks. Memory + IndexedDB backends. Open source.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,10 +17,10 @@
     "shard-tsdb",
     "blackjack",
     "open-source",
-    "apache-2.0"
+    "gpl-3.0"
   ],
   "author": "Slid Phi Labs / Corey Tasz",
-  "license": "Apache-2.0",
+  "license": "GPL-3.0-only",
   "devDependencies": {
     "@types/node": "^20.0.0",
     "typescript": "^5.4.0"

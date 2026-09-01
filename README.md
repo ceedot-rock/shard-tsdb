@@ -1,6 +1,6 @@
 # shard-tsdb
 
-**Apache-2.0** · pure-JS time-series database with Blackjack-compressed blocks (memory + IndexedDB backends).
+**GNU GPLv3** · pure-JS time-series database with Blackjack-compressed blocks (memory + IndexedDB backends).
 
 ## Install
 
@@ -10,7 +10,7 @@ npm install shard-tsdb
 
 ## License & credit
 
-Apache License 2.0 — free commercial use; keep copyright and `NOTICE` attribution.
+GNU GPLv3 — keep copyright and `NOTICE` attribution. Closed-source distribution needs a [written exception](COMMERCIAL.md).
 
 © 2026 Slid Phi Labs / Corey Tasz
 
